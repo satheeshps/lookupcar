@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <LinearLayout
+        android:id="@+id/logoPan"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:background="@color/sea_blue"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/logoImg"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.3"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:gravity="center|left"
+            android:layout_marginLeft="10px"
+            android:textSize="34dp"
+            android:textStyle="bold"
+            android:text="@string/app_name"
+            android:id="@+id/textView"
+            />
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        layout="@layout/park_item" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="fill_parent"
+        android:layout_weight="0.6"
+        android:layout_height="0dp" >
+
+        <com.trolp.lookupcar.view.VerticalViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <!--ImageButton
+            android:id="@+id/finderTypeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:background="@null"
+            android:layout_marginLeft="6dp"
+            android:scaleType="center"
+            android:src="@drawable/radar_icon" /-->
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.09"
+            android:background="@color/park_blue"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="0dp" >
+
+        <Button
+            android:id="@+id/imageButton1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.30"
+            android:background="@drawable/button_shape"
+            android:text="@string/park"
+            android:padding="6dp"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.30"
+            android:text="@string/find"
+            android:background="@drawable/button_shape"
+            android:padding="6dp"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/finderTypeButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/radar_screen"
+        android:padding="0dp"
+        android:scaleType="fitCenter" />
+    </FrameLayout>
+
+</LinearLayout>

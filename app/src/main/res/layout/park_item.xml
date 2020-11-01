@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/steel_grey"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/parkItemImg"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@color/steel_grey"
+        android:paddingLeft="5dp"
+        android:scaleType="center"
+        android:paddingRight="5dp"
+        android:src="@drawable/marker" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75"
+        android:background="@color/steel_grey"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/parkItemTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:background="@color/steel_grey"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="left|bottom"
+            android:paddingTop="5dp"
+            android:textColor="@color/font_grey"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/parkTimeItemTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:background="@color/steel_grey"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="left"
+            android:paddingBottom="5dp"
+            android:textColor="@color/font_grey"
+            android:textSize="14sp"
+            android:textStyle="normal|italic" />
+    </LinearLayout>
+
+    <!--
+    LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.49"
+        android:background="@color/steel_grey"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/parkTimeItemImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@color/steel_grey"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/time" />
+
+        <TextView
+            android:id="@+id/parkTimeItemTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:background="@color/steel_grey"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/font_grey"
+            android:textSize="18sp"
+            android:textStyle="normal|italic" />
+    </LinearLayout-->
+
+</LinearLayout>

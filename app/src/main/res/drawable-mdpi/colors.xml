@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sea_blue">#349864</color>
+    <color name="park_blue">#7BBBFF</color>
+    <color name="find_green">#7BE9B0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_violet">#422E37</color>
+    <color name="purple">#953163</color>
+    <color name="rose">#D8335B</color>
+    <color name="magenta">#EE543A</color>
+    <color name="orange">#EA942F</color>
+    <color name="yellow">#F3BE16</color>
+    <color name="dark_grey">#343434</color>
+    <color name="steel_grey1">#F1F1F1</color>
+    <color name="steel_grey">#F0F0F0</color>
+    <color name="font_grey">#7F7F7F</color>
+    <color name="font_greyer">#413F2A</color>
+</resources>
